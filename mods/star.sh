@@ -165,7 +165,7 @@ if [[ $(NGSANE_CHECKPOINT_TASK) == "start" ]]; then
             --runMode alignReads --readFilesIn $f $f2 --readFilesCommand $ZCAT \
             --genomeDir $INDEX \
             --outFileNamePrefix $OUTDIR/$SAMPLE/ \
-            --outSAMtype BAM SortedByCoordinate \
+            --outSAMtype BAM Unsorted \
             --outTmpDir $THISTMP \
             --runThreadN $CPU_STAR $STARADDPARAM $RG"
      else
